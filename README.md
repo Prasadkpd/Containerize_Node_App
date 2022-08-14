@@ -5,3 +5,15 @@ Containerize a node js application with Docker, Dockerfile, docker build , docke
 <code>
 docker build . -t node_docker
 </code>
+
+
+## Check Docker image
+<code>
+docker images node_docker
+</code>
+
+
+## Run Docker image
+<code>
+docker build . -t node_docker
+</code>
