@@ -15,5 +15,22 @@ docker images node_docker
 
 ## Run Docker image
 <code>
-docker build . -t node_docker
+docker run --name c1 -p 80:8080 -d node_docker
 </code>
+
+## Display Running Docker image
+<code>
+docker ps
+</code>
+
+## Docker Logs
+<code>
+docker logs id
+</code>
+
+## Make request
+<code>
+curl localhost:80
+</code>
+
+
