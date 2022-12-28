@@ -1,4 +1,4 @@
-# Containerize_Node_App
+# Containerize Node App
 
 Containerize a node js application with Docker, Dockerfile, docker build , docker run, docker
 
