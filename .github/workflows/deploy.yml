@@ -30,7 +30,6 @@ jobs:
         # uses: docker/login-action@f4ef78c080cd8ba55a85445d5b36e214a81df20a
         uses: docker/login-action@v2.1.0
         with:
-           registry: registry.heroku.com
            # Username used to log against the Docker registry
            username: $DOCKER_USERNAME
            # Password or personal access token used to log against the Docker registry
