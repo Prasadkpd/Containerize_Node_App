@@ -11,6 +11,8 @@ jobs:
   build:
     env:
       Email: ${{ secrets.HEROKU_EMAIL }}
+      API_KEY: ${{ secrets.HEROKU_API_KEY }}
+      APP_NAME: ${{ secrets.HEROKU_APP_NAME }}
     runs-on: ubuntu-latest
     steps:
       # Check-out your repository.
@@ -33,10 +35,10 @@ jobs:
           
           # Heroku API key associated with provided user's email.
           # Api Key is available under your Heroku account settings.
-          heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
+          heroku_api_key: $API_KEY
           
           # Name of the heroku application to which the build is to be sent.
-          heroku_app_name: ${{ secrets.HEROKU_APP_NAME }}
+          heroku_app_name: $APP_NAME
 
           # (Optional, default: "./")
           # Dockerfile directory.
