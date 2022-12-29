@@ -25,7 +25,12 @@ jobs:
         run:  echo $API_KEY
 
 ### ⬇ IMPORTANT PART ⬇ ###
-          
+      - name: Login to Heroku container registry
+        uses: docker/login-action@v1 
+        with:
+          registry: registry.heroku.com
+          username: $Email
+          password: $HEROKU_API_KEY
       - name: Build, Push and Release a Docker container to Heroku. # Your custom step name
         uses: gonuit/heroku-docker-deploy@v1.3.3 # GitHub action name (leave it as it is).
         with:
